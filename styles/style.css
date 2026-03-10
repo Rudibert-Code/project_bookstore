@@ -72,6 +72,14 @@ main{
     filter: drop-shadow(0 4px 8px #0a0012);
 }
 
+.book-base:hover{
+    background-color: #0e3847;
+}
+
+.icon-book{
+    width: 88px;
+}
+
 .price-n-likes{
     width: 100%;
     display: flex;
@@ -89,6 +97,10 @@ main{
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.icon-like{
+width: 40px;
 }
 
 .book-info{
@@ -115,9 +127,14 @@ th , td{
 }
 
 .book-footer{
+    width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
+}
+
+.icon-submit{
+    width: 48px;
 }
 
 .separator{
