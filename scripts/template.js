@@ -1,31 +1,41 @@
-function bookDetails(){
+function bookDetails(name, price, likes, author, releaseDate, genre, i){
 document.getElementById('main-container').innerHTML += `
-            <section class="book-base" id="book-">
-                <h2 id="book-title-">Placeholder Title</h2>
+            <section class="book-base" id="book-${i}">
+                <h2 id="book-title-">${name}</h2>
                 <div class="separator"></div>
                 <img class="icon-book" src="./assets/img/icon-book.png" alt="">
                 <div class="separator"></div>
                 <section class="price-n-likes">
-                    <p id="book-price">100,50€</p>
+                    <p id="book-price-${i}">${price}€</p>
                     <div class="book-likes">
-                        <p id="book-likes">1234</p>
+                        <p id="book-likes-${i}">${likes}</p>
                         <a href="#" onclick="toggleLikes()"><img class="icon-like" src="./assets/img/icon-like-on.png" alt=""></a>
                     </div>
                 </section>
                 <section class="book-info">
-                    <table>
-                        <th>Author :</th>
-                        <td>Name</td>
+                    <table class="book-info-table">
+                        <tr>
+                            <th>Author</th>
+                            <td>: ${author}</td>
+                        </tr>
+                        <tr>
+                            <th>Release Date</th>
+                            <td>: ${releaseDate}</td>
+                        </tr>
+                        <tr>
+                            <th>Genre</th>
+                            <td>: ${genre}</td>
+                        </tr>
                     </table>
                 </section>
                 <div class="separator"></div>
-                <section class="book-comments" id="book-comments">
+                <section class="book-comments" id="book-comments-${i}">
                     <h3>Comments</h3>
                     <p id="my-comment">It is a book of all time 100%.</p>
                 </section>
                 <section class="book-footer">
-                    <input class="book-comment-input" type="text" value="enter your comment...">
-                    <a href="#" onclick="addComment()"><img class="icon-submit" src="./assets/img/ivon-submit.png" alt=""></a>
+                    <input class="book-comment-input" id="comment-input-${i}" type="text" value="enter your comment...">
+                    <a href="#" onclick="addComment(${i})"><img class="icon-submit" src="./assets/img/ivon-submit.png" alt=""></a>
                 </section>
             </section>
            `;
