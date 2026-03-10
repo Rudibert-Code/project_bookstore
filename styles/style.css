@@ -1,4 +1,43 @@
 body{
     margin: 0;
-    background-color: rgb(4, 17, 58);
+    background-color: #180627;
+}
+header{
+    width: 100%;
+    background-color: #0D3240;
+    display: flex;
+    justify-content: center;
+    filter: drop-shadow(0 4px 8px #0a0012);
+}
+a{
+    text-decoration: none;
+}
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 32px;
+    color: white;
+}
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: white;
+}
+.header-details{
+    width: 100%;
+    max-width: 1440px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 32px;
+}
+main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-container{
+    background-color: #0D3240;
 }

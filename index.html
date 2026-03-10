@@ -7,30 +7,39 @@
     <link rel="stylesheet" href="./styles/style.css">
 </head>
 <body>
-    <header></header>
+    <header>
+        <section class="header-details">
+            <a href="#"><h1>DA Bookstore</h1></a>
+            <p>GET YOUR BOOKS HERE</p>
+        </section>
+    </header>
     <main>
-        <section id="main-container">
-            <section id="book-info-">
-                <p id="book-title-"></p>
+        <section class="main-container">
+            <section id="book-details-">
+                <p id="book-title-">Placeholder Title</p>
+                <div class="separator"></div>
                 <img src="" alt="">
+                <div class="separator"></div>
                 <section class="price-n-likes">
-                    <p id="book-price">€</p>
+                    <p id="book-price">100,50€</p>
                     <div>
-                        <p id="book-likes"></p>
-                        <a href="" onclick=""></a>
+                        <p id="book-likes">1234</p>
+                        <a href="#" onclick="toggleLikes()"><img src="" alt=""></a>
                     </div>
                 </section>
                 <section class="book-info">
                     <table>
-                        <th></th>
-                        <td></td>
+                        <th>Author</th>
+                        <td>Name</td>
                     </table>
                 </section>
+                <div class="separator"></div>
                 <section class="book-comments" id="book-comments">
-                    <p id="my-comment"></p>
+                    <p id="my-comment">Was a book.</p>
                 </section>
                 <section class="book-footer">
-                    
+                    <input type="text" value="enter your comment...">
+                    <a href="#" onclick="addComment()"><img src="" alt=""></a>
                 </section>
             </section>
         </section>
