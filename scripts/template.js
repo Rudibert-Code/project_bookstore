@@ -9,7 +9,7 @@ document.getElementById('main-container').innerHTML += `
                     <p id="book-price-${i}">${price}€</p>
                     <div class="book-likes">
                         <p id="book-likes-${i}">${likes}</p>
-                        <a href="#" onclick="toggleLikes()"><img class="icon-like" src="./assets/img/icon-like-on.png" alt=""></a>
+                        <a href="#" onclick="toggleLikes(${i})"><img class="icon-like" src="./assets/img/icon-like-on.png" alt=""></a>
                     </div>
                 </section>
                 <section class="book-info">
