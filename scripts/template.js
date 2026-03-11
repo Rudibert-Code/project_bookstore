@@ -47,5 +47,5 @@ document.getElementById('main-container').innerHTML += `
 
             </section>
            `;
-           firstLickedIcon(i);
+           renderFirstLicked(i);
 }
