@@ -23,6 +23,7 @@ function toggleLikes(index){
         bookLikes--;
         document.getElementById(bookID).innerHTML = bookLikes;
     }
+    books[index].likes = bookLikes;
     switchLikedIcon(index);
 }
 
