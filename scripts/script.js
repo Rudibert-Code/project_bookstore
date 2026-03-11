@@ -12,7 +12,6 @@ function renderBookList(){
         let releaseDate = books[i].publishedYear;
         let genre = books[i].genre;
         bookDetails(name, price, likes, author, releaseDate, genre, i);
-        //loadComments(i);
     }
 }
 

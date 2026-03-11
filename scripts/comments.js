@@ -8,6 +8,7 @@ function loadComments(index){
         <div>
             <h3>${newCommentName}</h3>
             <p>${newComment}</p>
+            <br>
         </div>
         `;
     }

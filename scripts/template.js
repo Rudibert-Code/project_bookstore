@@ -49,4 +49,5 @@ document.getElementById('main-container').innerHTML += `
            `;
            renderFirstLicke(i);
            renderPrice(i);
+           loadComments(i);
 }
