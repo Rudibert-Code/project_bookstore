@@ -11,7 +11,7 @@ document.getElementById('main-container').innerHTML += `
                 <div class="separator"></div>
 
                 <section class="price-n-likes">
-                    <p id="book-price-${i}">${price}€</p>
+                    <p id="book-price-${i}"></p>
                     <div class="book-likes">
                         <p id="book-likes-${i}">${likes}</p>
                         <a href="#" onclick="toggleLikes(${i})"><img id="book-likes-icon-${i}" class="icon-like" src="./assets/img/icon-like-off.png" alt=""></a>
@@ -47,5 +47,6 @@ document.getElementById('main-container').innerHTML += `
 
             </section>
            `;
-           renderFirstLicked(i);
+           renderFirstLicke(i);
+           renderPrice(i);
 }

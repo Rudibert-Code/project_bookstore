@@ -1,7 +1,7 @@
 let likedByU;
 
 // check object if book is liked and turn Like-Icon on/off after 1st render. 
-function renderFirstLicked(index){
+function renderFirstLicke(index){
     likedByU = books[index].liked;
     let iconID = "book-likes-icon-" + index;
     if (likedByU == false) {
