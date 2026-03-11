@@ -1,4 +1,5 @@
 function init(){
+    loadData();
     renderBookList();
 }
 
@@ -13,6 +14,7 @@ function renderBookList(){
         let genre = books[i].genre;
         bookDetails(name, price, likes, author, releaseDate, genre, i);
     }
+    saveData();
 }
 
 

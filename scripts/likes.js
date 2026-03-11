@@ -36,4 +36,5 @@ function switchLikedIcon(index){
         document.getElementById(iconID).src="./assets/img/icon-like-off.png";
         books[index].liked = false;
     }
+    saveData();
 }
