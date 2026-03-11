@@ -2,7 +2,8 @@ let currentPrice;
 
 function  renderPrice(index){
     currentPrice = books[index].price;
-    currentPrice.toFixed(2);
+    let extendedNumber = currentPrice + 0.0001; 
+    let fixedPrice = extendedNumber.toFixed(2);
     let bookPriceID = "book-price-" + index;
-    document.getElementById(bookPriceID).innerHTML = currentPrice +"€";
+    document.getElementById(bookPriceID).innerHTML = fixedPrice +"€";
 }
