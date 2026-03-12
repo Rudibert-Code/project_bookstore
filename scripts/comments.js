@@ -10,14 +10,12 @@ function loadComments(index){
         commentLocation.innerHTML += `
         <div>
             <h3>${newCommentName}</h3>
-            <p>${newComment}</p>
-            <br>
+            <p>${newComment}</p><br>
         </div>
         `;
     }
     saveData();
 }
-
 
 function addComment(indexComment){
     let inputID = "comment-input-" + indexComment;

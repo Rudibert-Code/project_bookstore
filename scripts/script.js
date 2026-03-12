@@ -8,7 +8,6 @@ function renderBookList(){
         let name = books[i].name;
         let price = books[i].price;
         let likes = books[i].likes;
-        let isLiked = books[i].liked;
         let author = books[i].author;
         let releaseDate = books[i].publishedYear;
         let genre = books[i].genre;
